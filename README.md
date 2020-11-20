@@ -94,9 +94,9 @@ Kenapa harus pake `termux-api`, pada package `termux-api` terdapat command `term
 ## Cache
 Terdapat folder **cache/** semisal web overload akan melakukan non-stop download terhadap url kriteria, jadi semisal timeout ya retry. Hal ini berguna buat saya yang usianya sudah tidak muda, setelah laman terdownload cek menggunakan HTML Viewer (default ada di Android) apabila tidak sesuai kriteria stop, kalau sesuai baru pertarungan dimulai.
 
-**Beberapa data mungkin tidak tampil (usia, gender dan formasi)** entah gimana (parsing?) querynya, kesel aja rebutan resources buat login eh mentok di usia. Karena repositori ini tidak melakukan login jadi ya gitu.
+**Beberapa data mungkin tidak tampil (usia, gender dan formasi)** entah gimana (parsing?) query di sisi aplikasinya, rebutan resources buat login terus mentok di usia. Karena repositori ini tidak melakukan login jadi ya gitu.
 
-"Kualifikasi/(Usia Maksimal,Jumlah Formasi)" itu cuma tampil kalo udah login, kalo Gaji saya setuju. Tapi gender? sama usia? saya yakin sih itu data "Jumlah Formasi" minimal ada 2 kolom (Gender sama Demand), usia apa lagi cuma integer \*kali aja di follow-up.
+"Kualifikasi/(Usia Maksimal,Jumlah Formasi)" itu cuma tampil kalo udah login, kalo Gaji saya setuju. Tapi gender? sama usia?, saya yakin "Jumlah Formasi" juga minimal ada 2 kolom (Gender sama Demand), usia apa lagi cuma integer \*kali aja di follow-up.
 
 Terdapat file **report.txt** semisal anda menghapus notifikasi secara tidak sengaja atau ingin copy-paste url ke browser.
 
