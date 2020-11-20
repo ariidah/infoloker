@@ -24,7 +24,6 @@ class infolokerSpider(scrapy.Spider):
             urls=['https://infoloker.karawangkab.go.id/',]
         else:
             urls=['http://localhost/',]
-        
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
 
@@ -47,7 +46,7 @@ class infolokerSpider(scrapy.Spider):
                         obj.write('---\n'+jobdesc+'-'+company_name+'@'+location+'\n'+link+'\n')
                         obj.close()
                 try:
-                    subprocess.run(["bash","makecache.sh",link,"&!"])
+                    subprocess.Popen(["bash","makecache.sh",link])
                 except Exception as e:
                     pass
                 try:
