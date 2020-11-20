@@ -23,6 +23,8 @@ function is_installed(){
 	if [[ $x == $y ]];then
 		loginfo "Mode perbaikan repositori"
 		return 0
+	else
+		return 1
 	fi
 }
 
@@ -119,7 +121,9 @@ function to_sdcard(){
 	done
 	cd "$TARGET"
 }
-if [[ ! `is_installed` ]];then
+
+is_installed
+if [[ $? -gt 0 ]];then
 	to_sdcard
 fi
 
