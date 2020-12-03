@@ -45,7 +45,7 @@ Intruksi selanjutnya mengandalkan file $HOME/infoloker.sh file itu **HARUS** ada
 	```
 	which infoloker
 	```
-4. Apabila hasil dari point 4 tidak ada apa-apa kosong, lakukan langkah ini dan coba lagi :
+4. Apabila hasil dari point 3 tidak ada apa-apa kosong, lakukan langkah ini dan coba lagi :
 	```
 	ln -s $HOME/infoloker.sh $HOME/../usr/bin/infoloker
 	```
@@ -92,7 +92,7 @@ Kenapa harus pake `termux-api`, pada package `termux-api` terdapat command `term
 **Harap stop termux-job-scheduler setelah lewat jam kerja** (I mean, ngapain sih, toh bukan berarti akan ada yang posting lowongan tengah malem)
 
 ## Cache
-Terdapat folder **cache/** semisal web overload akan melakukan non-stop download terhadap url kriteria, jadi semisal timeout ya retry. Hal ini berguna buat saya yang usianya sudah tidak muda, setelah laman terdownload cek menggunakan HTML Viewer (default ada di Android) apabila tidak sesuai kriteria stop, kalau sesuai baru pertarungan dimulai.
+Terdapat folder **cache/** semisal web overload akan melakukan non-stop download terhadap url kriteria, jadi semisal timeout ya retry. Setelah laman terdownload cek menggunakan HTML Viewer (default ada di Android) apabila tidak sesuai kriteria stop, kalau sesuai baru pertarungan dimulai.
 
 **Beberapa data mungkin tidak tampil (usia, gender dan formasi)** entah gimana (parsing?) query di sisi aplikasinya, rebutan resources buat login terus mentok di usia. Karena repositori ini tidak melakukan login jadi ya gitu.
 

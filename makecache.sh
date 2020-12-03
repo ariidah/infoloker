@@ -9,7 +9,7 @@ function urldecode(){
 }
 output=`urldecode "${@/*\/}"`
 \timeout 1 sleep 10;
-while [[ $? -gt 8 ]];do
+while [[ $? -gt 0 ]];do
 	\timeout -s SIGTERM 60 \wget -q -o - --adjust-extension --no-check-certificate -P 'cache/' "$@";
 done
 \w3m -dump "cache/$output.html" > "cache/$output.txt"
